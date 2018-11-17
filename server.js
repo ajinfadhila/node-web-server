@@ -32,16 +32,17 @@ hbs.registerHelper('screamIt', (text) => {
   return text.toUpperCase();
 });
 
+app.get('/', (req, res) => {
+  res.render('home.hbs', {
+    pageTitle: 'Home Page',
+    welcomeMessage: 'Welcome to my website'
+  });
+});
+
 server.listen(port, function() {
   console.log('Chat server running');
 });
 
-// app.get('/', (req, res) => {
-//   res.render('home.hbs', {
-//     pageTitle: 'Home Page',
-//     welcomeMessage: 'Welcome to my website'
-//   });
-// });
 //
 // app.get('/about', (req, res) => {
 //   res.render('about.hbs', {
