@@ -51,14 +51,14 @@ app.get('/bad', (req, res) => {
   });
 });
 
-server.listen(port, function() {
-  console.log('Chat server running');
+// server.listen(port, function() {
+//   console.log('Chat server running');
+// });
+server.listen(port, () => {
+  console.log(`Server is up on port ${port}`);
 });
 
 //
 //
 // // /bad - send back json with errorMessage
 //
-// server.listen(port, () => {
-//   console.log(`Server is up on port ${port}`);
-// });
