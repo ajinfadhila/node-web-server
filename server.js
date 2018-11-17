@@ -39,16 +39,17 @@ app.get('/', (req, res) => {
   });
 });
 
+app.get('/about', (req, res) => {
+  res.render('about.hbs', {
+    pageTitle: 'About Page'
+  });
+});
+
 server.listen(port, function() {
   console.log('Chat server running');
 });
 
 //
-// app.get('/about', (req, res) => {
-//   res.render('about.hbs', {
-//     pageTitle: 'About Page'
-//   });
-// });
 //
 // // /bad - send back json with errorMessage
 // app.get('/bad', (req, res) => {
