@@ -28,7 +28,7 @@ server.listen(port, function() {
   console.log('Chat server running');
 });
 
-// app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public'));
 //
 // hbs.registerHelper('getCurrentYear', () => {
 //   return new Date().getFullYear();
