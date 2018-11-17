@@ -28,16 +28,14 @@ hbs.registerHelper('getCurrentYear', () => {
   return new Date().getFullYear();
 });
 
+hbs.registerHelper('screamIt', (text) => {
+  return text.toUpperCase();
+});
+
 server.listen(port, function() {
   console.log('Chat server running');
 });
 
-//
-//
-// hbs.registerHelper('screamIt', (text) => {
-//   return text.toUpperCase();
-// });
-//
 // app.get('/', (req, res) => {
 //   res.render('home.hbs', {
 //     pageTitle: 'Home Page',
