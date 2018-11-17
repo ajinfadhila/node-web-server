@@ -45,6 +45,12 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/bad', (req, res) => {
+  res.send({
+    errorMessage: 'Unable to handle request'
+  });
+});
+
 server.listen(port, function() {
   console.log('Chat server running');
 });
@@ -52,11 +58,6 @@ server.listen(port, function() {
 //
 //
 // // /bad - send back json with errorMessage
-// app.get('/bad', (req, res) => {
-//   res.send({
-//     errorMessage: 'Unable to handle request'
-//   });
-// });
 //
 // server.listen(port, () => {
 //   console.log(`Server is up on port ${port}`);
