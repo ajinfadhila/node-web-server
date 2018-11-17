@@ -23,16 +23,16 @@ app.set('view engine', 'hbs');
 //   res.render('maintenance.hbs');
 // });
 app.use(express.static('client'));
+app.use(express.static(__dirname + '/public'));
+hbs.registerHelper('getCurrentYear', () => {
+  return new Date().getFullYear();
+});
 
 server.listen(port, function() {
   console.log('Chat server running');
 });
 
-app.use(express.static(__dirname + '/public'));
 //
-// hbs.registerHelper('getCurrentYear', () => {
-//   return new Date().getFullYear();
-// });
 //
 // hbs.registerHelper('screamIt', (text) => {
 //   return text.toUpperCase();
