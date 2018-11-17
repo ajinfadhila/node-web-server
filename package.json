@@ -1,17 +1,26 @@
 {
-  "name": "node-web-server",
+  "name": "js-fundamentals-test",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node index.js"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.14.0",
-    "hbs": "^4.0.0",
+    "express": "^4.16.4",
+    "http-server": "^0.11.1",
     "socket.io": "^2.1.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonnyk20/chat-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jonnyk20/chat-app/issues"
+  },
+  "homepage": "https://github.com/jonnyk20/chat-app#readme"
 }
