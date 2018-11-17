@@ -7,6 +7,13 @@ var app = express();
 var http = require('http');
 var server = http.Server(app);
 
+app.use(express.static('client'));
+
+server.listen(PORT, function() {
+  console.log('Chat server running');
+});
+
+
 // hbs.registerPartials(__dirname + '/views/partials')
 // app.set('view engine', 'hbs');
 //
@@ -22,11 +29,6 @@ var server = http.Server(app);
 // app.use((req, res, next) => {
 //   res.render('maintenance.hbs');
 // });
-app.use(express.static('client'));
-
-server.listen(PORT, function() {
-  console.log('Chat server running');
-});
 
 // app.use(express.static(__dirname + '/public'));
 //
