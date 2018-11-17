@@ -24,6 +24,6 @@ app.use((req, res, next) => {
 // });
 app.use(express.static('client'));
 
-server.listen(PORT, function() {
+server.listen(port, function() {
   console.log('Chat server running');
 });
