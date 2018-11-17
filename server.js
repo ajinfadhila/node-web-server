@@ -8,6 +8,6 @@ var http = require('http');
 var server = http.Server(app);
 app.use(express.static('client'));
 
-server.listen(PORT, function() {
+server.listen(port, function() {
   console.log('Chat server running');
 });
